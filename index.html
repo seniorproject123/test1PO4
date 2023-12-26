@@ -1,0 +1,512 @@
+<html>
+<header id="myHeader" class="">
+	<svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 714.6 401.1">
+  <path fill="#fff" fill-rule="evenodd" d="M502.8 0h211.8l-23 39.7-138.5 240L483 401H342.7L413 279.6 251.4 0h140.3L483 158.1 538.6 62 502.8 0Zm-201 279.6L140.1 0H0l231.7 401 70-121.4Z"/>
+</svg>
+	<nav>
+		<a href="#vision">Vision</a>
+		<a href="#knowledge">Knowledge</a>
+		<a href="#space">Space</a>
+		<a href="#contact">Contactez-nous</a>
+		<button id="openmenu">
+			<span></span>
+			<span></span>
+		</button>
+	</nav>
+</header>
+<head>
+    <!-- Autres éléments du head -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("4QzJoffphk7ZK7F6i"); // Remplacez par votre User ID d'EmailJS
+        })();
+    </script>
+
+    
+</head>
+<div id="page" class="">
+	<section id="vision" style="background-image:url(https://assets.codepen.io/214624/vision.jpg)">
+		<h1>Vision.</h1>
+        <h2>Maintenir votre indépendance est important, et il existe de nombreuses ressources pour vous aider dans ce sens.</h2>
+	</section>
+	<section id="knowledge" style="background-image:url(https://assets.codepen.io/214624/knowledge.jpg)">
+		<h1>Knowledge.</h1>
+	</section>
+	<section id="space">
+		<h1>Space.</h1>
+	</section>
+	<section id="future" style="background-image:url(https://assets.codepen.io/214624/future.jpg)">
+		<h1>Future.</h1>
+        <h2>Senior</h2>
+	</section>
+    <section id="contact">
+        <div class="form-container">
+            <h1>Contactez-nous</h1>
+            <form id="contact-form">
+                <input type="hidden" name="contact_number">
+                <label>Name</label>
+                <input type="text" name="user_name">
+                <label>Email</label>
+                <input type="email" name="user_email">
+                <label>Message</label>
+                <textarea name="message"></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>À Propos</h4>
+                <p>Cette section peut contenir une brève description de votre entreprise ou de vos services.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Tél: 123-456-7890</p>
+                <p>Email: info@votresite.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Suivez-nous</h4>
+                <p>
+                    <a href="#">Facebook</a> |
+                    <a href="#">Twitter</a> |
+                    <a href="#">Instagram</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 VotreSite.com | Conçu par VotreNom</p>
+        </div>
+    </footer>
+    
+    
+    
+</div>
+
+</html>
+
+
+<script type="text/javascript">
+	document.getElementById('contact-form').addEventListener('submit', function(event) {
+		event.preventDefault(); // Empêche la soumission standard du formulaire
+
+		// Ici, "template_xyz" est votre modèle d'email sur EmailJS
+		// et "service_xyz" est le service que vous avez configuré
+		console.log("aaa")
+		emailjs.sendForm('service_i4xwqxs', 'template_hrs95o6', this)
+			.then(function() {
+				alert('Message envoyé avec succès !');
+			}, function(error) {
+				alert('Erreur lors de l\'envoi du message');
+				console.log('error when send')
+			});
+	});
+</script>
+<style>
+    .site-footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+    padding: 0 20px;
+}
+
+.footer-section h4 {
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section a {
+    color: #ccc;
+    line-height: 1.6;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+}
+
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
+
+body {
+	    line-height: 1.6;
+    color: #fff;
+		background: #000;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "-apple-system", "BlinkMacSystemFont", "Roboto", "Helvetica Neue", sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	
+	&.stop {
+		overflow: hidden;
+	}
+}
+
+#page {
+	position: relative;
+	transition: 1s all ease-in-out;
+	
+	&.menuopen {
+		opacity: .6;
+		filter: blur(20px);
+		transform: scale(1.2);
+	}
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+    color: #fff;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000;
+    opacity: .5;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+h1 {
+    font-size: 120px;
+    margin: 0;
+    z-index: 2;
+    position: relative;
+}
+
+
+header {
+	z-index: 99999;
+	position: relative;
+	
+	#logo {
+		position: fixed;
+		top: 30px;
+		left: 0;
+		right: 0;
+		width: 100px;
+		height: auto;
+		margin: 0 auto;
+		opacity: 1;
+		transition: .3s all cubic-bezier(0.075, 0.82, 0.165, 1) .6s;
+	}
+	
+	nav {
+		display: flex;
+		height: 100px;
+		justify-content: center;
+		align-items: center;
+		padding: 0 20px;
+		position: fixed;
+		left: 0;
+		right: 0;
+		width: 500px;
+		margin: 0 auto;
+		top: 120px;
+		background-color: rgba(255,255,255,.05);
+		border-radius: 200px;
+		z-index: 9;
+		backdrop-filter: blur(5px);
+		border: 1px solid rgba(255,255,255,.06);
+		transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1) .2s;
+
+		
+		a {
+			color: #fff;
+			text-decoration: none;
+			font-weight: 700;
+			display: block;
+			padding: 10px 20px;
+			line-height: 1;
+			font-size: 15px;
+			letter-spacing: 2px;
+			text-transform: lowercase;
+			transition: .3s all cubic-bezier(0.075, 0.82, 0.165, 1) .6s;
+
+		}
+		
+		button {
+			-webkit-appearance: none;
+			background: rgba(0,0,0,.3);
+			backdrop-filter: blur(5px);
+			border: 1px solid rgba(255,255,255,.1);
+			position: absolute;
+			z-index: 99;
+			left: 0;
+			margin: auto;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			width: 60px;
+			height: 60px;
+			border-radius: 100%;
+			outline: 0;
+				border: 0;
+			cursor: pointer;
+								transition: .3s all cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
+			transform: scale(0);
+
+			span {
+				width: 40%;
+				background: #fff;
+				height: 2px;
+				display: block;
+				margin: 5px auto;
+				transform: scalex(0);
+				transition: .6s transform cubic-bezier(0.075, 0.82, 0.165, 1) 0s, .3s margin ease-in 0s;
+			}
+			
+			&:hover {
+				border-color: rgba(255,255,255,.5);
+				
+				span {
+					margin: 10px auto;
+				}
+			}
+		}
+	}
+}
+
+header.sticky {
+	#logo {
+		top: 0;
+		transform: scale(.8);
+		opacity: 0;
+		transition-delay: 0.5s;
+	}
+	nav {
+		top: 20px;
+		padding: 0;
+		width: 90px;
+		height: 90px;
+		transition-delay: 0.5s;
+		
+		button {
+			transform: scale(1);
+			transition-delay: 0.6s;
+			
+			span {
+				transform: scalex(1);
+				transition: .6s transform cubic-bezier(0.075, 0.82, 0.165, 1) .8s, .3s margin ease-in 0s;
+			}
+		}
+		
+		a { 
+			padding: 0;
+			opacity: 0;
+			letter-spacing: 0px;
+			transform: scale(0.3);
+			transition-delay: 0.2s;
+		}
+	}
+}
+
+#fixedlink {
+	position: fixed;
+	bottom: 0;
+	z-index: 9999;
+	right:0;
+	left:0;
+	text-align: center;
+	text-decoration: none;
+	color:#fff;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	padding: 20px;
+}
+
+
+#contact-form {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 40px auto;
+    font-family: 'Arial', sans-serif;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#contact-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#contact-form textarea {
+    height: 100px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    #contact-form {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+/* Styles existants (conserver ceux-ci tels quels) */
+/* ... Votre CSS actuel ... */
+
+/* Début des modifications pour la responsivité */
+@media (max-width: 768px) {
+    /* Styles pour les tablettes et les petits écrans */
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-bottom: 20px;
+    }
+
+    nav {
+        width: auto;
+        position: relative;
+        top: 0;
+        background-color: transparent;
+        border-radius: 0;
+    }
+
+    nav a {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 15px;
+    }
+
+    #contact-form {
+        width: 90%;
+    }
+
+    section {
+        padding: 30px;
+        text-align: center;
+    }
+
+    section h1 {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Styles pour les téléphones mobiles */
+    nav a {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    section h1 {
+        font-size: 60px;
+    }
+
+    #contact-form {
+        padding: 15px;
+    }
+
+    .footer-section h4, .footer-section p, .footer-section a {
+        font-size: 14px;
+    }
+}
+
+</style>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init('4QzJoffphk7ZK7F6i');
+    })();
+</script>
+<script type="text/javascript">
+    window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // generate a five digit number for the contact_number variable
+            this.contact_number.value = Math.random() * 100000 | 0;
+            // these IDs from the previous steps
+            emailjs.sendForm('service_i4xwqxs', 'template_hrs95o6', this)
+                .then(function() {
+                    console.log('SUCCESS!');
+                }, function(error) {
+                    console.log('FAILED...', error);
+                });
+        });
+    }
+</script>
