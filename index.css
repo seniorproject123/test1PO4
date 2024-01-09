@@ -1466,3 +1466,33 @@ button {
 .sticky + .content {
   padding-top: 102px;
 }
+
+
+
+/* Media Query pour les tablettes */
+@media (min-width: 768px) {
+  .header, .main-container, .article, .footer {
+    width: 100%;
+  }
+
+  /* Ajoutez ici d'autres styles spécifiques pour les tablettes */
+}
+
+/* Media Query pour les ordinateurs de bureau */
+@media (min-width: 992px) {
+  .header, .main-container, .article, .footer {
+    width: 100%;
+  }
+
+  /* Ajoutez ici d'autres styles spécifiques pour les ordinateurs de bureau */
+}
+
+/* Media Query pour les grands écrans */
+@media (min-width: 1200px) {
+  .header, .main-container, .article, .footer {
+    width: 100%;
+  }
+
+  /* Ajoutez ici d'autres styles spécifiques pour les grands écrans */
+}
+
