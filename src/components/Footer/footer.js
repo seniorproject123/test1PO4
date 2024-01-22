@@ -50,7 +50,7 @@ function Footer() {
                     </LeftClose>
                 <Middle>
                     <Text>Contact</Text>
-                    <Text>07 66 55 79 53</Text>
+                    <Text>soon</Text>
                     <Text>contact@boostseniors.fr</Text>
                 </Middle>
                 <Right>
