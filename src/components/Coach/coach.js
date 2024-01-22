@@ -59,7 +59,7 @@ const TextInfo = styled.p`
   filter: brightness(1);
 `
 
-const CoachInfo = styled.p`
+const CoachInfo = styled.div`
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;

@@ -26,7 +26,7 @@ function Service() {
                     list={["Planification des rendez-vous médicaux",
                            "Gestion du courrier",
                            "Démarches administratives"]}
-                    backColor={"#ECEBE5"}/>
+                    backcolor={"#ECEBE5"}/>
                 <Box
                     title={"ASSISTANCE ADMINISTRATIVE"}
                     list={["Découvrez le pouvoir apaisant de l'hypnose dans la prise en charge de la maladie d'Alzheimer. "]}/>
@@ -38,7 +38,7 @@ function Service() {
                     title={"ACTIVITÉS STIMULANTES"}
                     list={["Accompagnement à diverses sorties (expo, opéra, théâtre, shopping...)",
                     "Programme personnalisé, stimulant et ludique pour raviver sa mémoire"]}
-                    backColor={"#ECEBE5"}/>
+                    backcolor={"#ECEBE5"}/>
                     <GridImg src={GridTel}></GridImg>
                     </AbsPos>
                 </div>

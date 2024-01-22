@@ -14,8 +14,8 @@ const Card = styled.article`
     padding: 1rem;
 
     margin-bottom: 3rem;
-    ${(props) => !props.backColor && 'box-shadow: 0 0 40px rgba(0,0,0,.15)'};
-    ${(props) => props.backColor && `background-color: ${props.backColor}`};
+    ${(props) => !props.backcolor && 'box-shadow: 0 0 40px rgba(0,0,0,.15)'};
+    ${(props) => props.backcolor && `background-color: ${props.backcolor}`};
 `
 
 // Card content
@@ -37,19 +37,19 @@ const StyledListItem = styled.li`
     text-decoration:none;
 `
 
-function Box({title, list, backColor}){
+function Box({title, list, backcolor}){
     const defaultStyle = {
         border: '1px solid #ccc',
         padding: '10px',
         borderRadius: '5px',
       };
-    if (!backColor) {
+    if (!backcolor) {
         defaultStyle.boxShadow = `0 0 ${remy(40)} rgba(0,0,0,.15)`;
     } else {
-        defaultStyle.backgroundColor = backColor;
+        defaultStyle.backgroundColor = backcolor;
     }
       return (
-        <Card backColor={backColor}>
+        <Card $backcolor={backcolor}>
         <CardTitle>{title}</CardTitle>
             <CardText>
                 <StyledList>
