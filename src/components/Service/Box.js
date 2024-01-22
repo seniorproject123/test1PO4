@@ -14,7 +14,8 @@ const Card = styled.article`
     padding: 1rem;
 
     margin-bottom: 3rem;
-
+    ${(props) => !props.backColor && 'box-shadow: 0 0 40px rgba(0,0,0,.15)'};
+    ${(props) => props.backColor && `background-color: ${props.backColor}`};
 `
 
 // Card content
@@ -44,12 +45,12 @@ function Box({title, list, backColor}){
       };
     if (!backColor) {
         defaultStyle.boxShadow = `0 0 ${remy(40)} rgba(0,0,0,.15)`;
-      } else {
+    } else {
         defaultStyle.backgroundColor = backColor;
-      }
-    return (
-        <Card style={defaultStyle}>
-            <CardTitle>{title}</CardTitle>
+    }
+      return (
+        <Card backColor={backColor}>
+        <CardTitle>{title}</CardTitle>
             <CardText>
                 <StyledList>
                     {list.map((item, index) => (
@@ -58,7 +59,6 @@ function Box({title, list, backColor}){
                 </StyledList>
             </CardText>
         </Card>
-          
     )
 }
 
