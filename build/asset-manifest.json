@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/seniorproject123.github.io/test1PO4/static/css/main.bb5e3e9e.css",
+    "main.js": "/seniorproject123.github.io/test1PO4/static/js/main.187d6eeb.js",
+    "static/js/496.79807afe.chunk.js": "/seniorproject123.github.io/test1PO4/static/js/496.79807afe.chunk.js",
+    "static/media/gridTel.jpg": "/seniorproject123.github.io/test1PO4/static/media/gridTel.7a63ae869f264836886b.jpg",
+    "static/media/guesswhat.jpg": "/seniorproject123.github.io/test1PO4/static/media/guesswhat.53c25118da50e0c790c6.jpg",
+    "static/media/paysage-background.jpg": "/seniorproject123.github.io/test1PO4/static/media/paysage-background.c4b7ca7d5f5499bd3856.jpg",
+    "static/media/drink.jpg": "/seniorproject123.github.io/test1PO4/static/media/drink.6c820fad1bd2bc4aaa77.jpg",
+    "static/media/glass.jpg": "/seniorproject123.github.io/test1PO4/static/media/glass.8b44fe9d2f3ad153ceff.jpg",
+    "static/media/grey.jpg": "/seniorproject123.github.io/test1PO4/static/media/grey.3ef4513b62154f8b7fff.jpg",
+    "static/media/BS.png": "/seniorproject123.github.io/test1PO4/static/media/BS.05a98b19896c46a07a6d.png",
+    "static/media/logo.png": "/seniorproject123.github.io/test1PO4/static/media/logo.05a98b19896c46a07a6d.png",
+    "index.html": "/seniorproject123.github.io/test1PO4/index.html",
+    "main.bb5e3e9e.css.map": "/seniorproject123.github.io/test1PO4/static/css/main.bb5e3e9e.css.map",
+    "main.187d6eeb.js.map": "/seniorproject123.github.io/test1PO4/static/js/main.187d6eeb.js.map",
+    "496.79807afe.chunk.js.map": "/seniorproject123.github.io/test1PO4/static/js/496.79807afe.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb5e3e9e.css",
+    "static/js/main.187d6eeb.js"
+  ]
+}
