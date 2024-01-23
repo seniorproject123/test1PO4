@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bb5e3e9e.css",
+    "main.js": "/static/js/main.186f48f8.js",
+    "static/js/496.79807afe.chunk.js": "/static/js/496.79807afe.chunk.js",
+    "static/media/gridTel.jpg": "/static/media/gridTel.7a63ae869f264836886b.jpg",
+    "static/media/guesswhat.jpg": "/static/media/guesswhat.53c25118da50e0c790c6.jpg",
+    "static/media/paysage-background.jpg": "/static/media/paysage-background.c4b7ca7d5f5499bd3856.jpg",
+    "static/media/drink.jpg": "/static/media/drink.6c820fad1bd2bc4aaa77.jpg",
+    "static/media/glass.jpg": "/static/media/glass.8b44fe9d2f3ad153ceff.jpg",
+    "static/media/grey.jpg": "/static/media/grey.3ef4513b62154f8b7fff.jpg",
+    "static/media/BS.png": "/static/media/BS.05a98b19896c46a07a6d.png",
+    "static/media/logo.png": "/static/media/logo.05a98b19896c46a07a6d.png",
+    "index.html": "/index.html",
+    "main.bb5e3e9e.css.map": "/static/css/main.bb5e3e9e.css.map",
+    "main.186f48f8.js.map": "/static/js/main.186f48f8.js.map",
+    "496.79807afe.chunk.js.map": "/static/js/496.79807afe.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb5e3e9e.css",
+    "static/js/main.186f48f8.js"
+  ]
+}
